@@ -1,0 +1,18 @@
+{
+  "images": {
+    "web_icon": "img/Bread.ico",
+    "brand_logo": "img/Bakery_logo.jpg",
+    "web_background": "BackGround.jpg"
+  },
+  "text": {
+    "brand_name": "Bread Bakery",
+    "product_name": "Premium Quality Bread",
+    "product_promotion": "40% Discount On All Items",
+    "product_adjective": "soft & fluffy"
+  },
+  "colors": {
+    "navbar_text_color": "#ffffff",
+    "hero_text_color": "#111111",
+    "blob_color": "#DE9954"
+  }
+}

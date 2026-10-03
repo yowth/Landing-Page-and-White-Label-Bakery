@@ -11,7 +11,14 @@ body {
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--theme);
+}
+
+:root{
+  --theme: #111111;
+  --navbar: #111111;
+  --blob: #ffffff;
+  --background: url("../img/BackGround.jpg");
 }
 
 /*HERO*/
@@ -20,7 +27,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-image: url("../img/BackGround.jpg");
+  background-image: var(--background);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +59,7 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: var(--navbar);
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
@@ -78,6 +85,11 @@ body {
   display: block;
 }
 
+.logo span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /*CONTENT*/
 .hero-content {
   width: 100%;
@@ -93,7 +105,8 @@ body {
   position: relative;
   width: 570px;
   height: 440px;
-  background-color: rgba(222, 153, 84, 0.84);
+  background-color: var(--blob);
+  opacity: 0.84;
   border: 3px solid white;
   display: flex;
   align-items: center;
@@ -125,21 +138,25 @@ body {
   font-size: clamp(32px, 3vw, 45px);
   font-weight: 400;
   margin-bottom: 20px;
+  color: var(--theme);
 }
 
-.discount {
+.promotion {
   display: inline-block;
   min-width: 350px;
   padding: 7px 25px;
-  border: 2px solid #111111;
+  border: 2px solid var(--theme);
   border-radius: 30px;
   font-size: 25px;
+  color: var(--theme);
 }
 
 .content h1 {
   font-size: 45px;
   font-weight: 400;
   margin: 18px 0;
+  text-transform: uppercase;
+  color: var(--theme);
 }
 
 .btn {
